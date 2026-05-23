@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class='search'>
+            <input id="search-input" type="text" placeholder="find" />
+        </div>
+
+        <div class='all-leads'>
+            <div class='table-wrapper'>
+                <div class='table'>
+                    <table id="leadstable" border="0">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Budget</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leadstablebody"></tbody>
+                    </table>
+                </div>
+                <div class='table-footer' id="leads-count">
+                    Всего заявок: 5
+                </div>
+            </div>
+
+            <div class='sorttable'>
+                <div class="sorttable-header">
+                    <p>Сортировать по...</p>
+                </div>
+                <div id="sort-buttons">
+                    <button id="sort-id">1. ID</button>
+                    <button id="sort-name">2. Name</button>
+                    <button id="sort-course">3. Course</button>
+                    <button id="sort-budget">4. Budget</button>
+                    <button id="sort-status">5. Status</button>
+                </div>
+                <div class="sorttable-footer"></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
